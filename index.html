@@ -27,7 +27,7 @@ myHeading.onclick = function() {
 function setUserName() {
   var myName = prompt('Bitte geben Sie Ihren Namen ein.');
   
-  myHeading.textContent = 'Mozilla ist cool, ' + myName;
+  myHeading.textContent = 'Das ist richtig fett: ' + myName;
   localStorage.setItem('name', myHeading.textContent);
 }
 
@@ -39,7 +39,7 @@ if (localStorage.getItem('name'))
 { myHeading.textContent = localStorage.getItem('name')
       ;
     } else {
-      myHeading.textContent = 'Mozilla ist scheiße......das must du ändern - geb schnell was ein, Doktor'}
+      myHeading.textContent = 'Alles ist ein bisschen scheiße......das must du ändern - geb schnell was ein, Doktor'}
 
 </script>
 
