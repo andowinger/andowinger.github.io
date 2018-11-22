@@ -24,9 +24,10 @@
 
 <html>
 <body>
-<h1>Herr Doktro Göbel - es dauert leider immer etwas, bis ein Commit ankommt und man muss immer ein neues Inkognito Fenster aufmachen, damit Changes ankommen.
+<h1 id="myHeader">Herr Doktro Göbel - es dauert leider immer etwas, bis ein Commit ankommt und man muss immer ein neues Inkognito Fenster aufmachen, damit Changes ankommen.
   DAs ist räudig. Lokal entwickeln geht schnellA!</h1>
 
+  <h2 id="derWechselndeText"></h2>
 <button class="button buttonred"> Was findet ihr denn gut ihr großen Lamas da draußen?</button>
 <p>
 <img src=images/a.jpg>
@@ -41,7 +42,7 @@ document.querySelector('html').onclick = function() {
 
 
 <script>
-var myHeading = document.querySelector('h1');
+var myHeading = document.querySelector('derWechselndeText');
 var myButton = document.querySelector('button');
 
 myHeading.onclick = function() {
