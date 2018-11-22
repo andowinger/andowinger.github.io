@@ -1,0 +1,57 @@
+<html>
+<body>
+<h1>Göbbels</h1>
+
+<button>Name aendern ihr lamas</button>
+<img src=images/a.jpg>
+
+
+<!-- <script>
+document.querySelector('html').onclick = function() {
+    alert('Hey! Nicht so viel klicken!');
+}
+</script> -->
+</body>
+
+
+<script>
+var myHeading = document.querySelector('h1');
+var myButton = document.querySelector('button');
+
+myHeading.onclick = function() {
+  alert('Hey! Nicht so viel klicken!');
+ }
+function setUserName() {
+  var myName = prompt('Bitte geben Sie Ihren Namen ein.');
+  
+  myHeading.textContent = 'Mozilla ist cool, ' + myName;
+  localStorage.setItem('name', myHeading.textContent);
+}
+
+myButton.onclick = function() {
+  setUserName();
+}
+
+if (localStorage.getItem('name'))
+{ myHeading.textContent = localStorage.getItem('name')
+      ;
+    } else {
+      myHeading.textContent = 'Mozilla ist scheiße......das must du ändern - geb schnell was ein, Doktor'}
+
+</script>
+
+<script>
+var myImage = document.querySelector('img');
+
+myImage.onclick = function() {
+    var mySrc = myImage.getAttribute('src');
+    if(mySrc === 'images/q.jpg') {
+      myImage.setAttribute ('src','images/a.jpg');
+    } else {
+      myImage.setAttribute ('src','images/q.jpg');
+    }
+}
+
+
+</script>
+</html>
